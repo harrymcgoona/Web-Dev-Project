@@ -22,16 +22,23 @@
         <section id="about">
             <h2>About us</h2>
             <p>This is a brief introduction about our business.</p>
+          <p> At O'Reilly's Autobody, we are dedicated to providing top-notch collision repair and automotive services.</p> 
+           <p> With over 20 years of experience, our skilled technicians use the latest technology and techniques to restore your vehicle to its original condition.</p>
+             <p> Our commitment to quality and customer satisfaction   sets us apart, making us the trusted choice for all your autobody needs.</p>
         </section>
 
         <section id="services">
             <h2>Services</h2>
             <p>Here are the services we offer.</p>
+            <p> - Restorations <p>
+             <p>  - Crash Repair <p>
+               <p> - Tuning <p>
+               <p> - Detailing <p>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>You can reach me at: <a href="Oriellysautobody@gmail.com"></a></p>
+            <p>You can reach us at: <a href="Oriellysautobody@gmail.com"></a></p>
         </section>
     </main>
 
@@ -40,3 +47,53 @@
     </footer>
 </body>
 </html>
+
+/*CSS Code*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background (White) */
+    color: #333333; /* Dark text */
+}
+
+h1, h2, h3 {
+    color: #0056b3; /* A strong blue for headings, generally distinguishable */
+}
+
+a {
+    color: #ff5722; /* A bright colour for links for ease of readability */
+    text-decoration: underline; 
+}
+
+a:hover {
+    color: #e64a19; 
+}
+
+.button {
+    background-color: #4caf50; 
+    color: #ffffff; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #388e3c; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #cccccc; 
+    padding: 8px;
+}
+
+table th {
+    background-color: #e0e0e0; 
+}
+
+.table-highlight {
+    background-color: #ffeb3b; 
+}
