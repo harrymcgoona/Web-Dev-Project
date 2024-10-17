@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background (White) */
+    color: #333333; /* Dark text */
+}
+
+h1, h2, h3 {
+    color: #0056b3; /* A strong blue for headings, generally distinguishable */
+}
+
+a {
+    color: #ff5722; /* A bright color for links for ease of readability */
+    text-decoration: underline; 
+}
+
+a:hover {
+    color: #e64a19; 
+}
+
+.button {
+    background-color: #4caf50; 
+    color: #ffffff; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #388e3c; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #cccccc; 
+    padding: 8px;
+}
+
+table th {
+    background-color: #e0e0e0; 
+}
+
+.table-highlight {
+    background-color: #ffeb3b; 
+}
