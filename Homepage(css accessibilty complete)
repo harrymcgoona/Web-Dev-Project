@@ -8,7 +8,7 @@
 </head>
 <style>
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #f9f9f9; /* Light background (White) */
     color: #333333; /* Dark text */
 }
