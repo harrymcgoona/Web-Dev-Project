@@ -18,7 +18,7 @@
   <nav>
     <a href="index.html">Homepage</a><br>
     <a href="about.html">About</a><br>
-    <a href="contact.html">Contact Us</a><br>
+    <a href="contact.html">Contact</a><br>
   </nav>
   
   <div class="contact-image">
