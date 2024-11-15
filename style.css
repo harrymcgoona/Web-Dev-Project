@@ -1,0 +1,40 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.center-text {
+  text-align: center;
+}
+body {
+font-family: "Montserrat", sans-serif;
+}
+
+body, html {
+height: 100%;
+margin: 0;
+font-family: "Montserrat", sans-serif;
+}
+
+.contact-image {
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("OIP.jpg");
+height: 65%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+.contact-text {
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+
+.contact-form {
+text-align: center;
+position: center;
+}
