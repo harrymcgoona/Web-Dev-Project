@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+        
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About John O'Reily</title>
+    <Montserrat font -->
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            font-size: large;
+            background: rgb(249, 248, 248);
+            padding: 0px;
+            margin: 0px;
+            
+        }
+        h1 {
+            color: #0056b3;
+            margin: 0px;
+            padding: 10px
+        }
+        p {
+            color: #333;
+            margin: 10px
+        }
+        footer{
+            font-size: small;
+
+        }
+        
+
+        a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        a:hover {
+            background-color: rgb(255, 255, 255);
+            
+        }
+        
+        
+        header {
+            display: inline-flex;
+            background-color: lightblue;
+            width: 100%;
+            justify-content: space-around;
+            align-content: center;
+            position: fixed;
+            margin: 0px;
+            padding: 0px;
+            font-size: 0.5em;
+        }
+
+        #first {
+            padding-top: 80px;
+        }
+    
+        h1 {
+            margin: 0px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="homepage.html">Home</a></h1>
+        <h1><a href="website20.html">About Me</a></h1>
+        <h1><a href="website20offers.html"> Upcoming Events</a>
+        <h1><a href="contactpage.html">Contact</a></h1>
+    </header>
+    <main>
+    <h1 id="first">About me, John O'Reilly.</h1>
+    <img src="john.JPG" alt="john.JPG">
+    <h1>Early Life</h1>
+    <p>When I was younger, I often found myself mesmerized by the elegance of cars, classic, mundane, flashy, it didn't matter. What mattered to me was the look of the car and the specifications. Even at that early age, I knew what I wanted to see in cars. All the car shows I attended when I was younger helped develop my expert taste in cars.</p>
+
+    <h1>My Taste in Cars</h1>
+    <p>My taste in cars is very universal. I often don't look at the price of a car but instead focus on the quality. I once heard a quote from a car manufacturer in Japan, and he said, "All cars need to be made with love, or else quality suffers and the car will lack soul." These words have stuck with me since, and this forms my taste in cars.</p>
+
+    <h1>My First Car</h1>
+    <p>My first car is what I would consider to be a more mundane type of car, the good ol' Ford Fiesta. The Ford Fiesta is not the mightiest car in the world, but it was on the cheaper side. I remember its top speed, its torque, and the tire grip rating—all of these stuck out to me.</p>
+
+    <h1>Why I Made This Website</h1>
+    <p>I made this website because I felt there was a significant gap in the online car scene, with too many websites dedicated to supercars and not enough for the average Joe.</p>
+    <img src="istockphoto-1401379798-612x612car.JPG" alt="this is gtr">
+    <h1>What You Will Find on This Website</h1>
+    <p>On this website, you will find my life's work—a gallery of cars, some normal and some not-so-normal. Nevertheless, they all match my taste in cars, and I hope they will match your tastes as well, because that's what this website is for.</p>
+    </main>
+</body>
+ 
+<footer>&#169 John O'reilly car page,all rights reserved 2024</footer>
+
+</html>
