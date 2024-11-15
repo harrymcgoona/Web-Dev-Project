@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    
+        
+
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming cartastic events</title>
+    <Montserrat font -->
+    
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            font-size: large;
+            margin: 0px;
+            background: rgb(252, 252, 253);
+            
+        }
+        h1 {
+            color: #0056b3;
+            margin: 0px;
+        }
+        p {
+            color: #c63d1f;
+        }
+        footer{
+            font-size: small;
+
+        }
+        h2{
+            font-family: sans-serif;
+            font-size: large;
+        }
+
+        #images {
+            background-color: #0056b3;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 0px;
+        }
+
+        .bugatti {
+            width: 70%;
+            height: 100%;
+        }
+
+        .ferrari{
+            width: 70%;
+            height: 70%;
+        }
+        .lambo{
+            width:  70%;
+            height: 70%;
+        }
+        header {
+            display: inline-flex;
+            background-color: lightblue;
+            width: 100%;
+            height: 7%;
+            justify-content: space-around;
+            align-content: center;
+            position: fixed;
+            margin: 0px;
+            padding: 0px;
+            font-size: 0.6em;}
+        a:hover {
+            background-color: rgb(255, 255, 255);
+        }
+        
+        .koe{
+            width: 70%;
+            height:70%;
+        }
+        #lamborghini {
+            background-color: rgb(252, 128, 5);
+            
+        }
+        #koe
+        {
+            background-color: aliceblue;
+        }
+        #ferrari{
+            background-color: red;
+        }
+    </style>
+
+<header>
+    
+    <h1><a href="homepage.html">Home</a></h1>
+    <h1><a href="website20.html">About Me</a></h1>
+    <h1><a href="website20offers.html">Upcoming events</a></h1>
+    <h1><a href="contactpage.html">Contact</a></h1>
+    
+</header>
+
+
+    <body>
+        <img src="istockphoto-1401379798-612x612car.JPG">
+
+        <h1>Upcoming cartastic events!</h1>
+        <p>these are the hottest upcoming car events coming soon &#128293;</p>
+        <div id="images">
+            <h2>Bugatti bolide showcase 
+                <br>in france scheduled for<br> late 2024</h2>
+
+            <img src="bugatti.jpg" class="bugatti"></div>
+            <br>
+            <div id="ferrari"><h2>The ferrari F80 is also on the horizon in late 2024,<br>and models could be finished next year</h2>
+            <img src="ferrari.jpg" class="ferrari"></div>
+            <br>
+            <div id="lamborghini"><h2>The lamborgini revuelto will soon <br> have official influencer first impressions</h2>
+            <img src="lamborgini.jpg" class="lambo"></div>
+            <br>
+            <div id="koe"><h2>The Koenigsegg kesko is all <br> about that speed and will have a chance to showcase that speed at an <br>uncomfirmed date and venue</h2>
+            <img src="koe.jpg" class="koe"></div>>
+
+        </div>;
+
+        <h1>Upcoming autoshop deals for christmas!</h1>
+        <img src="istockphoto-1401379798-612x612car.JPG"class ="car">
+
+        <div><h2>between now and christmas get 25% off new tires if you have an EV</h2></div>
+        <img src="tires.jpg"   class="tires" > 
+        <br>
+        <h2>Part time mecahnic needed!, call for further info</h2>
+        <img src="mechanic.jpg" class="mechanic">
+
+
+
+<footer>&#169 John O'reilly car page,all rights reserved 2024</footer>
+    </body>
+
+    </html>
+    
