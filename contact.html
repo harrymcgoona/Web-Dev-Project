@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    <Montserrat font -->
+    <title>Contact</title>
     <script>
-        function showMessage() {
-            document.getElementById("message").innerHTML = "Your message has been sent and I will get back to you as soon as possible!";
+        function validateForm(event) {
+            event.preventDefault();
+
+            const fname = document.getElementById("fname").value.trim();
+            const lname = document.getElementById("lname").value.trim();
+            const number = document.getElementById("number").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const dropdown = document.getElementById("dropdown").value;
+            const inquiry = document.getElementById("inquiry").value.trim();
+
+            let message = "";
+
+            if (!fname) {
+                message += "First name is required.\n";
+            }
+
+            if (!lname) {
+                message += "Last name is required.\n";
+            }
+
+            const phoneRegex = /^[0-9]{10}$/; 
+            if (!number || !phoneRegex.test(number)) {
+                message += "Enter a valid 10-digit phone number.\n";
+            }
+
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; 
+            if (!email || !emailRegex.test(email)) {
+                message += "Enter a valid email address.\n";
+            }
+
+            if (!dropdown) {
+                message += "Please select a reason for inquiry.\n";
+            }
+
+            if (!inquiry) {
+                message += "Inquiry details are required.\n";
+            }
+
+            if (message) {
+                alert(message);
+                return false; 
+            }
+
+            document.getElementById("message").innerHTML = "Your message has been sent and I will get back to you as soon as possible. Thank you for your interest in O'Reilly's Autobody!";
+            return true; 
         }
     </script>
-
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
@@ -21,18 +61,23 @@
             background: rgb(252, 252, 253);
         }
         .center-text {
-          text-align: center;
+            text-align: center;
         }
         .contact-form {
-        text-align: center;
-        position: center;
+            text-align: center;
+            position: center;
+        }
+        .contact-dropdown {
+            text-align: center;
+            position: center;
         }
         h1 {
             color: #0056b3;
             margin: 0px;
         }
         p {
-            color: #c63d1f;
+            font-family: sans-serif;
+            font-size: large;
         }
         label {
             color: #c63d1f;
@@ -45,7 +90,6 @@
             font-family: sans-serif;
             font-size: large;
         }
-
         #images {
             background-color: #0056b3;
             justify-content: space-between;
@@ -74,40 +118,40 @@
             background-color: rgb(255, 255, 255);
         }
     </style>
-
-<header>
-
-    <h1><a href="index.html">Home</a></h1>
-    <h1><a href="website20.html">About Me</a></h1>
-    <h1><a href="website20offers.html">Upcoming events</a></h1>
-    <h1><a href="contact.html">Contact</a></h1>
-
-</header>
-
-
-    <body>
-        
-
-        <script src="script.js"></script>
-        <h1 class="center-text">Contact Form</h1><br>
-        <h1 class="center-text">Contact Form</h1><br>
-        <h2 class="center-text">If you have any inquiries please fill out the form below:</h2><br><br>
-        <div class="contact-form">
-            <label for="fname" >First name:</label><br>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br><br>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Home</a></h1>
+        <h1><a href="website20.html">About Me</a></h1>
+        <h1><a href="website20offers.html">Upcoming events</a></h1>
+        <h1><a href="contact.html">Contact</a></h1>
+    </header>
+    <h1 class="center-text">Contact Form</h1><br>
+    <h1 class="center-text">Contact Form</h1>
+    <h2 class="center-text">If you have any inquiries please fill out the form below:</h2>
+    <div class="contact-form">
+        <form onsubmit="return validateForm(event)">
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" required><br><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" required><br><br>
             <label for="number">Phone Number:</label><br>
-            <input type="text" id="number" name="number"><br><br>
+            <input type="text" id="number" name="number" required><br><br>
             <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email"><br><br>
-            <label for="inquiry">Reason for Inquiry:</label><br>
-            <input type="text" id="inquiry" name="Reason for Inquiry"><br><br>
-            <button onclick="showMessage()">Submit</button><br><br><br><br>
-            <p id="message"></p><br><br><br><br>
-        <div>
-
-<footer>&#169 John O'reilly car page,all rights reserved 2024</footer>
+            <input type="text" id="email" name="email" required><br><br>
+            <label for="dropdown">Reason for Inquiry:</label><br>
+            <select id="dropdown" name="dropdown">
+                <option value="">Select...</option>
+                <option value="General">General</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Technical Support">Technical Support</option>
+            </select><br><br>
+            <label for="inquiry">Inquiry Details:</label><br>
+            <textarea id="inquiry" name="inquiry" required></textarea><br><br>
+            <button type="submit">Submit</button>
+        </form><br>
+        <p id="message"></p>
+    </div><br><br><br><br><br><br><br>
+    <footer>&#169; John O'Reilly Car Page, all rights reserved 2024</footer>
 </body>
-
 </html>
